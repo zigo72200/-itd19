@@ -1,0 +1,31 @@
+.header-container {
+    display: flex;
+    padding: 6px 20px;
+}
+
+
+
+.open-mob-btn {
+    display: block;
+    margin-left: auto;
+    @media  screen and (min-width: 1280px) {
+        display: none;
+        
+    }
+}
+
+
+
+.header-navigation__list {
+    @media  screen and (max-width: 1279px) {
+        display: none;
+        
+    }
+}
+
+.header-btn {
+    @media  screen and (max-width: 767px) {
+        display: none;
+        
+    }
+}
