@@ -81,6 +81,15 @@
     background-color: $first-background;
     border-radius: 22px;
     border: none;
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+}
+
+.mob-menu-btn:active, 
+.mob-menu-btn:focus {
+    outline: none;
 }
 
 .mob-menu-navigation__item {
