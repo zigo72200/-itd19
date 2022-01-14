@@ -1,0 +1,55 @@
+
+// Стили общие для заголовков Продуктов и О нас -----------------------------------------------------------------------------
+.title-container { 
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+
+}
+
+.label { 
+    margin-bottom: 15px;
+
+    color: $second-accent;
+
+    font-family: Titan One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.16;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.title { 
+    color: $main-accent;
+
+    font-family: Titan One;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 58px;
+    }
+}
+
