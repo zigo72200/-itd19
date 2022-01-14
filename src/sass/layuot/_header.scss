@@ -1,3 +1,5 @@
+// HEADER
+
 .header-container {
     display: flex;
     padding: 6px 20px;
@@ -9,17 +11,29 @@
     display: block;
     margin-left: auto;
     @media  screen and (min-width: 1280px) {
-        display: none;
-        
+        display: none;  
     }
 }
 
-
+// NAVIGATION
 
 .header-navigation__list {
     @media  screen and (max-width: 1279px) {
         display: none;
         
+    }
+
+    @media  screen and (min-width: 1280px) {
+        display: flex;
+        margin-left: 110px;
+    }
+}
+
+.header-navigation__item {
+    @media  screen and (min-width: 1280px) {
+        &:not(:first-child) {
+            margin-left: 35px;
+        }
     }
 }
 
@@ -28,4 +42,13 @@
         display: none;
         
     }
+
+    @media  screen and (min-width: 1280px) {
+        margin-left: auto;
+    }
 }
+
+
+
+
+
