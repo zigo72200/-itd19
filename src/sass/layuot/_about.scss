@@ -1,3 +1,4 @@
+/*-----------------------About (how it’s made?)-------------------------*/
 .about{
     padding-top: 125px;
     padding-bottom: 40px;
@@ -13,14 +14,31 @@
      linear-gradient(
         $second-background,
         $second-background);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-bg-mob-2x.png),
+            linear-gradient(
+               $second-background,
+               $second-background);
+       
+        }
     }
     @media screen and (min-width: 1280px) {
-        background-image: url(../images/about/about-bg-mob-1x.png),
+        background-image: url(../images/about/about-bg-desk-1x.png),
      linear-gradient(
         $second-background,
         $second-background);
-    }
-    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-bg-desk-2x.png),
+            linear-gradient(
+               $second-background,
+               $second-background);
+       
+        }
+    }    
     @media screen and (min-width: 768px) {
         padding-top: 130px;
         padding-bottom: 66px;
@@ -59,11 +77,6 @@
         flex-basis: calc((100% - 37px) / 2);
     }
 }
-.about__img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 .about__wrap-text{
     width: 100%;
     @media screen and (max-width: 767px) {
@@ -81,10 +94,8 @@
 .about__preface{
     margin-bottom: 30px;
     font-family: DM Sans;
+    @include fonts(12px, 19px, $second-text);
     font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    color: $second-text;
     @media screen and (min-width: 768px) {
         margin-bottom: 35px;
         font-size: 14px;
@@ -100,9 +111,7 @@
     margin-bottom: 30px;
     font-family: DM Sans;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    color: $third-text;
+    @include fonts(12px, 19px, $third-text);
     @media screen and (min-width: 768px) {
         margin-bottom: 62px;
         font-size: 14px;
