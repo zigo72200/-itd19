@@ -36,9 +36,11 @@
   width: 230px;
   @media screen and(min-width: 768px) {
     width: 180px;
+    margin-right: 60px;
   }
   @media screen and(min-width: 1280px) {
     width: 330px;
+    margin-right: 30px;
   }
   &:nth-child(1)::before {
     content: url(/images/advantage/advantage-icon1.png);
@@ -56,4 +58,5 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
+  align-items: left;
 }
