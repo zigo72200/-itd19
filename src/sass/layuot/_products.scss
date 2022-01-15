@@ -8,7 +8,7 @@
         flex-wrap: wrap;
     } 
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         margin: -12px;
     } 
 }
@@ -41,7 +41,7 @@
         padding-bottom: 120px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         margin: 12px;
         flex-basis: calc((100% - 6 * 12px) / 3);
 
@@ -79,7 +79,7 @@
     position: relative;
     margin-bottom: 66px;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         margin-bottom: 70px;
     }
 
@@ -90,7 +90,7 @@
     letter-spacing: 0.04em;
     text-align: center;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         font-size: 30px;
     }
 
@@ -127,7 +127,7 @@
         padding-right: 10px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         padding-left: 45px;
         padding-right: 45px;
     }
