@@ -68,7 +68,7 @@
     &:nth-child(1) { 
         background-color: #FFB8CA;
 
-        // Вопрос с псевдоэлементом (не закончил)
+        // псевдоэлементы - картинки напитков
         &::before { 
             // Картинка напитка для мобилки
             @media screen and (max-width:767px) {
@@ -112,11 +112,11 @@
             }
 
             // Картинка напитка для десктопа
-            @media screen and (mшт-width:1280px) {
+            @media screen and (min-width:1280px) {
                 content:'';
                 position: absolute;
-                top: -113px;
-                left: 10px;
+                top: -210px;
+                left: 33px;
 
                 width: 335px;
                 height: 335px;
@@ -136,10 +136,140 @@
 
     &:nth-child(2) { 
         background-color: #F0D1A5;
+
+        // псевдоэлементы - картинки напитков
+        &::before { 
+            // Картинка напитка для мобилки
+            @media screen and (max-width:767px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 31px;
+
+                width: 249px;
+                height: 252px;
+
+                background-image: url(../images/products/products-mob2-1x.png);
+
+                // Картинка напитка для плотности пикселей 2х
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-mob2-2x.png);
+                    background-size: contain;
+                }
+            }
+
+            // Картинка напитка для таблетки
+            @media screen and (max-width:1279px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 10px;
+
+                width: 220px;
+                height: 226px;
+
+                background-image: url(../images/products/products-tb2-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-tb2-2x.png);
+                    background-size: contain;
+            }
+            }
+
+            // Картинка напитка для десктопа
+            @media screen and (min-width:1280px) {
+                content:'';
+                position: absolute;
+                top: -210px;
+                left: 33px;
+
+                width: 335px;
+                height: 335px;
+
+                background-image: url(../images/products/products-dt2-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-dt2-2x.png);
+                    background-size: contain;
+            }
+            }
+            
+        }
     }
 
     &:nth-child(3) { 
         background-color: #C2E297;
+
+        // псевдоэлементы - картинки напитков
+        &::before { 
+            // Картинка напитка для мобилки
+            @media screen and (max-width:767px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 31px;
+
+                width: 249px;
+                height: 252px;
+
+                background-image: url(../images/products/products-mob3-1x.png);
+
+                // Картинка напитка для плотности пикселей 2х
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-mob3-2x.png);
+                    background-size: contain;
+                }
+            }
+
+            // Картинка напитка для таблетки
+            @media screen and (max-width:1279px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 10px;
+
+                width: 220px;
+                height: 226px;
+
+                background-image: url(../images/products/products-tb3-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-tb3-2x.png);
+                    background-size: contain;
+            }
+            }
+
+            // Картинка напитка для десктопа
+            @media screen and (min-width:1280px) {
+                content:'';
+                position: absolute;
+                top: -210px;
+                left: 33px;
+
+                width: 335px;
+                height: 335px;
+
+                background-image: url(../images/products/products-dt3-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-dt3-2x.png);
+                    background-size: contain;
+            }
+            }
+            
+        }
     }
 }
 
