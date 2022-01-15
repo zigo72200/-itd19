@@ -7,7 +7,7 @@
     $second-background);
     background-repeat: no-repeat;
     background-size: contain;  
-    background-position: left 0 bottom 80px, left bottom;      
+    background-position: left bottom;      
     @media screen and (max-width: 767px) {
 
         background-image: url(../images/about/about-bg-mob-1x.png),
@@ -113,13 +113,49 @@
     font-weight: 500;
     @include fonts(12px, 19px, $third-text);
     @media screen and (min-width: 768px) {
-        margin-bottom: 62px;
+        //margin-bottom: 62px;
         font-size: 14px;
         line-height: 25px;
         letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1280px) {
-        margin-bottom: 45px;
+        //margin-bottom: 45px;
         line-height: 27px;
     }
+}
+.about_button{
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        margin-top: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 45px;
+    }
+}
+/*-----------------------Read more-------------------------*/
+.read-more {
+    display: block;
+	border: 1px solid black;
+	padding: 10px 30px;
+	max-width: 200px;
+}
+
+.extra-text {
+	display: none;
+}
+
+#read-more:checked ~ .extra-text {
+	display: block;
+}
+
+.less {
+	display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+	display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+	display: inline;
 }
