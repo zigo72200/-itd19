@@ -45,7 +45,7 @@ ul {
 
 .container {
   width: 100%;
-  padding-left: 20x;
+  padding-left: 20px;
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -66,6 +66,71 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+.hero {
+  position: relative;
+  background-color: #ffb8ca;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  max-height: 502px;
+}
+
+.hero-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero-title {
+  position: absolute;
+  top: 25%;
+  z-index: 100;
+  max-width: 218px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-title .hero-title-span {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 96.5%;
+  color: #d41443;
+}
+
+.hero-circle {
+  position: relative;
+  top: 17%;
+  left: 20%;
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+
+.ice-cream-container {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  background-image: url("../images/hero/ice-cream-mob-1.png");
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 410px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .ice-cream-container {
+    background-image: url("../images/hero/ice-cream-mob-2.png");
   }
 }
 /*# sourceMappingURL=main.css.map */
