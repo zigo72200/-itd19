@@ -32,15 +32,21 @@
 }
 
 .adventages-item {
-  margin-bottom: 38px;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    }
   width: 230px;
   @media screen and(min-width: 768px) {
     width: 180px;
+    &:not(:last-child) {
     margin-right: 60px;
+    }
   }
   @media screen and(min-width: 1280px) {
     width: 330px;
+    &:not(:last-child) {
     margin-right: 60px;
+    }
   }
   &:nth-child(1)::before {
     content: url(/images/advantage/advantage-icon1.png);
@@ -57,5 +63,4 @@
   @media screen and(min-width: 768px) {
     display: flex;
   }
-  
 }
