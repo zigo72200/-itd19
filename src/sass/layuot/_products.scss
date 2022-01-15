@@ -290,19 +290,24 @@
     margin-bottom: 70px;
     font-size: 30px;
   }
-  // Вопрос с псевдоэлементом (не закончил)
-  // &::after {
-  //     content:'' ;
-  //     position: absolute;
 
-  //     bottom: -33px;;
-  //     left: 50%;
-  //     width: 6px;
-  //     height: 6px;
-  //     background-color: black;
-  //     border-radius: 50%;
-  //     background-image: url();
-  // }
+
+//   Вопрос с псевдоэлементом (не закончил)
+  &::after {
+    content:'';
+    position: absolute;
+
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 26px;
+    height: 6px;
+    background-image: url(../images/products/ellipse.svg), url(../images/products/ellipse.svg), url(../images/products/ellipse.svg);
+    background-position: left 0 top 0, left 10px top 0, left 20px top 0 ;
+    background-repeat: no-repeat;
+
+  }
+
   }
 
 .products__set__text { 
