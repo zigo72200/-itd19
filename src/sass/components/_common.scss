@@ -18,6 +18,7 @@ body {
 
 .label {
   margin-bottom: 15px;
+  text-transform: uppercase;
 
   color: $second-accent;
 
@@ -39,6 +40,7 @@ body {
 
 .title {
   color: $main-accent;
+  text-transform: uppercase;
 
   font-family: Titan One;
   font-size: 34px;

@@ -1,0 +1,77 @@
+.footer {
+  padding-top: 30px;
+  background-color: $second-background;
+}
+
+.footer__first-text {
+  font-family: 'Titan One';
+  @include fonts(18px, 1.17, $second-accent);
+  text-transform: uppercase;
+  letter-spacing: normal;
+  margin-bottom: 17px;
+  @media screen and (min-width: $second-change) {
+    @include fonts(26px, 1.15, $second-accent);
+  }
+}
+
+.footer__second-text {
+  font-family: 'Titan One';
+  @include fonts(34px, 1.15, $main-accent);
+  text-transform: uppercase;
+  color: $main-accent;
+  @media screen and (min-width: $second-change) {
+    @include fonts(48px, 1.15, $main-accent);
+  }
+}
+
+.social-networks {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 46px;
+}
+
+.social-networks__item:not(:first-child) {
+  margin-left: 29px;
+}
+
+.footer__contacts {
+  font-family: 'DM Sans';
+  font-weight: bold;
+  @include fonts(12px, 1.86, $second-text);
+  text-align: right;
+  @media screen and (min-width: $second-change) {
+    font-size: 14px;
+  }
+}
+
+.footer__contacts--link {
+  color: $main-accent;
+}
+
+.footer__flex-box {
+  @media screen and (min-width: $second-change) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: $second-change) {
+  .footer__flex-box--text {
+    margin-bottom: 43px;
+  }
+
+  // .footer__flex-box--link {
+  //   margin-bottom: 65px;
+  // }
+}
+
+.headline {
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  @include fonts(14px, 1.52, $third-text);
+  font-weight: bold;
+  text-align: center;
+  background-color: $second-background;
+
+  border-top: 1px solid #e1e1e1;
+}
