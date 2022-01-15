@@ -274,6 +274,7 @@
 }
 
 .products__set__title { 
+    color: $main-text;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 66px;
@@ -309,6 +310,7 @@
 }
 
 .products__set__text { 
+    color: $main-text;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
