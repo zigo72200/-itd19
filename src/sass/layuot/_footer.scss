@@ -1,6 +1,5 @@
 .footer {
   padding-top: 30px;
-  padding-bottom: 30px;
   background-color: $second-background;
 }
 
@@ -10,6 +9,9 @@
   text-transform: uppercase;
   letter-spacing: normal;
   margin-bottom: 17px;
+  @media screen and (min-width: $second-change) {
+    @include fonts(26px, 1.15, $second-accent);
+  }
 }
 
 .footer__second-text {
@@ -17,6 +19,9 @@
   @include fonts(34px, 1.15, $main-accent);
   text-transform: uppercase;
   color: $main-accent;
+  @media screen and (min-width: $second-change) {
+    @include fonts(48px, 1.15, $main-accent);
+  }
 }
 
 .social-networks {
@@ -34,16 +39,13 @@
   font-weight: bold;
   @include fonts(12px, 1.86, $second-text);
   text-align: right;
+  @media screen and (min-width: $second-change) {
+    font-size: 14px;
+  }
 }
 
 .footer__contacts--link {
   color: $main-accent;
-}
-
-.headline {
-  @include fonts(14px, 1.52, $third-text);
-  font-weight: bold;
-  text-align: center;
 }
 
 .footer__flex-box {
@@ -52,11 +54,24 @@
     justify-content: space-between;
   }
 }
+@media screen and (max-width: $second-change) {
+  .footer__flex-box--text {
+    margin-bottom: 43px;
+  }
 
-.footer__flex-box--text {
-  margin-bottom: 43px;
+  // .footer__flex-box--link {
+  //   margin-bottom: 65px;
+  // }
 }
 
-.footer__flex-box--link {
-  margin-bottom: 65px;
+.headline {
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  @include fonts(14px, 1.52, $third-text);
+  font-weight: bold;
+  text-align: center;
+  background-color: $second-background;
+
+  border-top: 1px solid #e1e1e1;
 }
