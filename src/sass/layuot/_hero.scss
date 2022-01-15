@@ -2,10 +2,11 @@
   position: relative;
   background-color: $header-background;
   overflow: hidden;
-
   width: 100vw;
   height: 100vh;
-  max-height: 502px;
+  max-width: 1600px;
+  min-height: 502px;
+  margin: 0 auto;
 }
 .hero-container {
   position: absolute;
@@ -15,21 +16,32 @@
   left: 0;
   padding-left: 21px;
 }
+.title-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  z-index: 105;
+}
 .hero-title {
-  position: absolute;
-  top: 25%;
-  z-index: 100;
   max-width: 218px;
+  margin-bottom: 19px;
 
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #ffffff;
+
+  .hero-anchor-link {
+    display: inline-block;
+    min-width: 62px;
+    background-color: $main-accent;
+  }
 
   .hero-title-span {
     font-weight: normal;
@@ -38,19 +50,36 @@
     color: $main-accent;
   }
 }
+.hero-container {
+  position: absolute;
+}
 .hero-circle {
-  position: relative;
-  top: 17%;
-  left: 20%;
+  position: absolute;
+  top: -10px;
+  left: -70px;
   width: 345px;
   height: 345px;
   border-radius: 50%;
   background-color: $second-accent;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 324px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
 }
-.ice-cream-container {
+.components-container {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 50%;
+  transform: translateX(-40%);
+}
+.ice-cream-container {
+  position: relative;
+  bottom: 0;
   background-image: url('../images/hero/ice-cream-mob-1.png');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/hero/ice-cream-mob-2.png');
