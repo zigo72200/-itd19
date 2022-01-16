@@ -46,6 +46,7 @@
 
 .social-networks__icon {
   fill: $footer-icon;
+  @include transition(fill);
   @media screen and (min-width: $second-change) {
     width: 34px;
     height: 34px;
