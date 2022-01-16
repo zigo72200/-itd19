@@ -121,23 +121,22 @@
         line-height: 1.94;
     }
 }
-.about_button{
+.about__btn{
+    display: inline-block;
     margin-top: 30px;
+    font-size: 14px;
     @media screen and (min-width: 768px) {
         margin-top: 62px;
+        font-size: 16px;
     }
     @media screen and (min-width: 1280px) {
         margin-top: 45px;
     }
 }
-/*-----------------------Read more-------------------------*/
-.read-more {
-    display: block;
-	border: 1px solid black;
-	padding: 10px 30px;
-	max-width: 200px;
+.about__btn-icon{
+  margin-left: 14px;
 }
-
+/*-----------------------Read more-------------------------*/
 .extra-text {
 	display: none;
 }
