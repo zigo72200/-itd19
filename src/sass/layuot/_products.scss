@@ -1,3 +1,18 @@
+
+.products__title-container { 
+    @media screen and (max-width:767px) {
+    margin-bottom: 144px;
+    }
+
+    @media screen and (min-width:768px) {
+    margin-bottom: 150px;
+    }
+
+    @media screen and (min-width:1280px) {
+    margin-bottom: 260px;
+    }
+}
+
 // ------------------------------сетка товаров
 .products__set__list {
   @media screen and (min-width: 768px) {
@@ -11,73 +26,253 @@
   }
 }
 
-.products__set__item {
-  position: relative;
-  padding-top: 160px;
-  padding-bottom: 110px;
-
-  border-radius: 24px;
-
-  width: 100%;
-  @media screen and (min-width: 320px) {
-    width: 280px;
-  }
-
-  // отступы между катрочками для мобилки
-  @media screen and (max-width: 767px) {
-    margin-bottom: 130px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 10px;
-    flex-basis: calc((100% - 6 * 10px) / 3);
-
-    padding-top: 150px;
-    padding-bottom: 120px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin: 12px;
-    flex-basis: calc((100% - 6 * 12px) / 3);
-
+.products__set__item { 
+    position: relative;
     padding-top: 160px;
-    padding-bottom: 150px;
-  }
+    padding-bottom: 110px;
 
-  // разные цвета для карточек
-  &:nth-child(1) {
-    background-color: #ffb8ca;
+    border-radius: 24px;
 
-    // Вопрос с псевдоэлементом (не закончил)
-    // &::before {
-    //     content:'';
-    //     // url();
-    //     position: absolute;
-    //     top: -50%;
-    //     left: 0;
-    //     background-repeat: no-repeat;
-    //     background-image: url();
-    // }
-  }
+    width: 100%;
+    @media screen and (min-width:320px) {
+        width: 280px;
+    }
 
-  &:nth-child(2) {
-    background-color: #f0d1a5;
-  }
+    // отступы между катрочками для мобилки 
+    @media screen and (max-width:767px) {
+        margin-bottom: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-  &:nth-child(3) {
-    background-color: #c2e297;
-  }
+
+    @media screen and (min-width:768px) {
+        margin: 10px;
+        flex-basis: calc((100% - 6 * 10px) / 3);
+
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin: 12px;
+        flex-basis: calc((100% - 6 * 12px) / 3);
+
+        padding-top: 160px;
+        padding-bottom: 150px;
+    }
+
+
+    // разные цвета для карточек
+    &:nth-child(1) { 
+        background-color: #FFB8CA;
+
+        // псевдоэлементы - картинки напитков
+        &::before { 
+            // Картинка напитка для мобилки
+            @media screen and (max-width:767px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 17px;
+
+                width: 249px;
+                height: 252px;
+
+                background-image: url(../images/products/products-mob1-1x.png);
+
+                // Картинка напитка для плотности пикселей 2х
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-mob1-2x.png);
+                    background-size: contain;
+                }
+            }
+
+            // Картинка напитка для таблетки
+            @media screen and (min-width:768px) and(max-width:1279px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 5px;
+
+                width: 220px;
+                height: 226px;
+
+                background-image: url(../images/products/products-tb1-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-tb1-2x.png);
+                    background-size: contain;
+            }
+            }
+
+            // Картинка напитка для десктопа
+            @media screen and (min-width:1280px) {
+                content:'';
+                position: absolute;
+                top: -210px;
+                left: 33px;
+
+                width: 335px;
+                height: 335px;
+
+                background-image: url(../images/products/products-dt1-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-dt1-2x.png);
+                    background-size: contain;
+            }
+            }
+            
+        }
+    }
+
+    &:nth-child(2) { 
+        background-color: #F0D1A5;
+
+        // псевдоэлементы - картинки напитков
+        &::before { 
+            // Картинка напитка для мобилки
+            @media screen and (max-width:767px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 17px;
+
+                width: 249px;
+                height: 252px;
+
+                background-image: url(../images/products/products-mob2-1x.png);
+
+                // Картинка напитка для плотности пикселей 2х
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-mob2-2x.png);
+                    background-size: contain;
+                }
+            }
+
+            // Картинка напитка для таблетки
+            @media screen and (min-width:768px) and  (max-width:1279px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 5px;
+
+                width: 220px;
+                height: 226px;
+
+                background-image: url(../images/products/products-tb2-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-tb2-2x.png);
+                    background-size: contain;
+            }
+            }
+
+            // Картинка напитка для десктопа
+            @media screen and (min-width:1280px) {
+                content:'';
+                position: absolute;
+                top: -210px;
+                left: 33px;
+
+                width: 335px;
+                height: 335px;
+
+                background-image: url(../images/products/products-dt2-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-dt2-2x.png);
+                    background-size: contain;
+            }
+            }
+            
+        }
+    }
+
+    &:nth-child(3) { 
+        background-color: #C2E297;
+
+        // псевдоэлементы - картинки напитков
+        &::before { 
+            // Картинка напитка для мобилки
+            @media screen and (max-width:767px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 17px;
+
+                width: 249px;
+                height: 252px;
+
+                background-image: url(../images/products/products-mob3-1x.png);
+
+                // Картинка напитка для плотности пикселей 2х
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-mob3-2x.png);
+                    background-size: contain;
+                }
+            }
+
+            // Картинка напитка для таблетки
+            @media screen and (min-width:768px) and (max-width:1279px) {
+                content:'';
+                position: absolute;
+                top: -113px;
+                left: 5px;
+
+                width: 220px;
+                height: 226px;
+
+                background-image: url(../images/products/products-tb3-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-tb3-2x.png);
+                    background-size: contain;
+            }
+            }
+
+            // Картинка напитка для десктопа
+            @media screen and (min-width:1280px) {
+                content:'';
+                position: absolute;
+                top: -210px;
+                left: 33px;
+
+                width: 335px;
+                height: 335px;
+
+                background-image: url(../images/products/products-dt3-1x.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) { 
+                    background-image: url(../images/products/products-dt3-2x.png);
+                    background-size: contain;
+            }
+            }
+            
+        }
+    }
 }
 
-.products__set__title {
-  position: relative;
-  margin-bottom: 66px;
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 70px;
-  }
+.products__set__title { 
 
   font-family: Titan One;
   font-size: 20px;
@@ -86,44 +281,101 @@
   letter-spacing: 0.04em;
   text-align: center;
 
+  color: $main-text;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 66px;
+
   @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
     font-size: 30px;
   }
 
-  // Вопрос с псевдоэлементом (не закончил)
-  // &::after {
-  //     content:'' ;
-  //     position: absolute;
 
-  //     bottom: -33px;;
-  //     left: 50%;
-  //     width: 6px;
-  //     height: 6px;
-  //     background-color: black;
-  //     border-radius: 50%;
-  //     background-image: url();
-  // }
+//   Вопрос с псевдоэлементом (не закончил)
+  &::after {
+    content:'';
+    position: absolute;
+
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 26px;
+    height: 6px;
+    background-image: url(../images/products/ellipse.svg), url(../images/products/ellipse.svg), url(../images/products/ellipse.svg);
+    background-position: left 0 top 0, left 10px top 0, left 20px top 0 ;
+    background-repeat: no-repeat;
+
+  }
+
+  }
+
+.products__set__text { 
+    color: $main-text;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    margin: 30px;
+
+
+    @media screen and (min-width:768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1.7;
+
+        margin: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 16px;
+
+        margin: 60px;
+    }
 }
 
-.products__set__text {
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
 
-  // font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.75;
-  letter-spacing: 0.04em;
-  text-align: center;
+.products__button__icon { 
+    border-radius: 50%;
+    background-color: #fff;
+}
 
-  @media screen and (min-width: 768px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+.products__button { 
+    position: relative;
+    display: flex;  
+    justify-content: center;
 
-  @media screen and (min-width: 1280px) {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
+    width: 40px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $first-background;
+    border: 0;
+    border-radius: 50%;
+
+    &::after { 
+        content:'';
+        position: absolute;
+
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 10px;
+        height: 10px;
+        z-index: 3;
+        background-image: url(../images/products/rightarrow_80815.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -1,3 +1,4 @@
+/*-----------------------About (how it’s made?)-------------------------*/
 .about{
     padding-top: 125px;
     padding-bottom: 40px;
@@ -6,21 +7,38 @@
     $second-background);
     background-repeat: no-repeat;
     background-size: contain;  
-    background-position: left 0 bottom 80px, left bottom;      
+    background-position: left bottom;      
     @media screen and (max-width: 767px) {
 
         background-image: url(../images/about/about-bg-mob-1x.png),
      linear-gradient(
         $second-background,
         $second-background);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-bg-mob-2x.png),
+            linear-gradient(
+               $second-background,
+               $second-background);
+       
+        }
     }
     @media screen and (min-width: 1280px) {
-        background-image: url(../images/about/about-bg-mob-1x.png),
+        background-image: url(../images/about/about-bg-desk-1x.png),
      linear-gradient(
         $second-background,
         $second-background);
-    }
-    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-bg-desk-2x.png),
+            linear-gradient(
+               $second-background,
+               $second-background);
+       
+        }
+    }    
     @media screen and (min-width: 768px) {
         padding-top: 130px;
         padding-bottom: 66px;
@@ -59,11 +77,6 @@
         flex-basis: calc((100% - 37px) / 2);
     }
 }
-.about__img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 .about__wrap-text{
     width: 100%;
     @media screen and (max-width: 767px) {
@@ -81,18 +94,15 @@
 .about__preface{
     margin-bottom: 30px;
     font-family: DM Sans;
+    @include fonts(12px, 1.62, $second-text);
     font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    color: $second-text;
     @media screen and (min-width: 768px) {
         margin-bottom: 35px;
         font-size: 14px;
-        line-height: 25px;
+        line-height: 1.76;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
-        line-height: 28px;
         letter-spacing: 0.04em;
     }
 }
@@ -100,17 +110,50 @@
     margin-bottom: 30px;
     font-family: DM Sans;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    color: $third-text;
+    @include fonts(12px, 1.62, $third-text);
     @media screen and (min-width: 768px) {
-        margin-bottom: 62px;
         font-size: 14px;
-        line-height: 25px;
+        line-height: 1.76;
         letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1280px) {
         margin-bottom: 45px;
-        line-height: 27px;
+        line-height: 1.94;
     }
+}
+.about__btn{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 14px;
+    @media screen and (min-width: 768px) {
+        margin-top: 62px;
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 45px;
+    }
+}
+.about__btn-icon{
+  margin-left: 14px;
+}
+/*-----------------------Read more-------------------------*/
+
+.extra-text {
+    display: none;
+}
+
+#read-more:checked ~ .extra-text {
+    display: block;
+}
+
+.less {
+	display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+	display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+	display: inline;
 }
