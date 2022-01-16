@@ -1,0 +1,9 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $second-background 40%,
+    $first-background 40%,
+    $first-background 60%,
+    $first-background 60%
+  );
+}
