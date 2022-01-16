@@ -368,14 +368,13 @@
         content:'';
         position: absolute;
 
-        bottom: 5px;
+        bottom: 15px;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 30px;
-        height: 30px;
-        fill: black;
+        width: 10px;
+        height: 10px;
         z-index: 3;
-        background-image: url(../images/products/forward-arrow_icon.svg);
+        background-image: url(../images/products/rightarrow_80815.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
