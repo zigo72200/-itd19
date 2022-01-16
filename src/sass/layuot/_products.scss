@@ -27,6 +27,15 @@
 }
 
 .products__set__item { 
+    // анимация карточки для планшета и десктопа
+    @media screen and (min-width:768px) {
+        @include transition ($property:all);
+        &:hover, &:focus {
+        transform: scale(1.05);
+    }
+    }
+    
+
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
@@ -129,7 +138,7 @@
                     background-size: contain;
             }
             }
-            
+
         }
     }
 
@@ -346,10 +355,15 @@
 
 .products__button__icon { 
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $first-background ;
 }
 
 .products__button { 
+    cursor: pointer;
+    @include transition ($property:all);
+    &:hover, &:focus {
+        transform: scale(1.5);
+    }
     position: relative;
     display: flex;  
     justify-content: center;
@@ -377,5 +391,6 @@
         background-image: url(../images/products/rightarrow_80815.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        
     }
 }
