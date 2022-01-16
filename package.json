@@ -6,7 +6,7 @@
   "homepage": "https://zigo72200.github.io/-itd19.git",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /-itd19.git/"
+    "build": "parcel build src/*.html --public-url /-itd19/"
   },
   "repository": {
     "type": "git",
