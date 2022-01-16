@@ -1,12 +1,12 @@
 <header class="page-header">
     <div class="container header-container">
         <a href="" class="logo">
-            <img src="./images/hero-img/logo.png" alt="logo">
+            <!-- <img src="./images/hero-img/logo.png" alt="logo"> -->
             <span class="logo__text">icecream</span></a>
 
         <!-- Кнопка моб-меню -->
 
-    <button type="button" class="open-mob-menu-btn">
+    <button type="button" class="open-mob-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg
             width="20px"
             height="12px"
@@ -49,9 +49,9 @@
 
     <!-- Моб-меню-->
 
-    <div class="mob-menu hidden">
+    <div class="mob-menu js-menu-container" id="mobile-menu">
         <div class="mob-menu__container">
-            <button type="button" class="close-mob-menu-btn">
+            <button type="button" class="close-mob-menu-btn js-close-menu">
                 <svg
             width="14px"
             height="14px"
