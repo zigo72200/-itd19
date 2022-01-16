@@ -137,12 +137,13 @@
   margin-left: 14px;
 }
 /*-----------------------Read more-------------------------*/
+
 .extra-text {
-	display: none;
+    display: none;
 }
 
 #read-more:checked ~ .extra-text {
-	display: block;
+    display: block;
 }
 
 .less {

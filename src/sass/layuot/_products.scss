@@ -27,6 +27,15 @@
 }
 
 .products__set__item { 
+    // анимация карточки для планшета и десктопа
+    @media screen and (min-width:768px) {
+        @include transition ($property:all);
+        &:hover, &:focus {
+        transform: scale(1.05);
+    }
+    }
+    
+
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
@@ -129,7 +138,7 @@
                     background-size: contain;
             }
             }
-            
+
         }
     }
 
@@ -323,16 +332,65 @@
     letter-spacing: 0.04em;
     text-align: center;
 
+    margin: 30px;
+
 
     @media screen and (min-width:768px) {
         padding-left: 10px;
         padding-right: 10px;
         line-height: 1.7;
+
+        margin: 40px;
     }
 
     @media screen and (min-width:1280px) {
         padding-left: 45px;
         padding-right: 45px;
         font-size: 16px;
+
+        margin: 60px;
+    }
+}
+
+
+.products__button__icon { 
+    border-radius: 50%;
+    background-color: $first-background ;
+}
+
+.products__button { 
+    cursor: pointer;
+    @include transition ($property:all);
+    &:hover, &:focus {
+        transform: scale(1.5);
+    }
+    position: relative;
+    display: flex;  
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $first-background;
+    border: 0;
+    border-radius: 50%;
+
+    &::after { 
+        content:'';
+        position: absolute;
+
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 10px;
+        height: 10px;
+        z-index: 3;
+        background-image: url(../images/products/rightarrow_80815.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
 }
