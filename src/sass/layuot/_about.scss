@@ -94,16 +94,15 @@
 .about__preface{
     margin-bottom: 30px;
     font-family: DM Sans;
-    @include fonts(12px, 19px, $second-text);
+    @include fonts(12px, 1.62, $second-text);
     font-weight: 500;
     @media screen and (min-width: 768px) {
         margin-bottom: 35px;
         font-size: 14px;
-        line-height: 25px;
+        line-height: 1.76;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
-        line-height: 28px;
         letter-spacing: 0.04em;
     }
 }
@@ -111,16 +110,15 @@
     margin-bottom: 30px;
     font-family: DM Sans;
     font-weight: 500;
-    @include fonts(12px, 19px, $third-text);
+    @include fonts(12px, 1.62, $third-text);
     @media screen and (min-width: 768px) {
-        //margin-bottom: 62px;
         font-size: 14px;
-        line-height: 25px;
+        line-height: 1.76;
         letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1280px) {
-        //margin-bottom: 45px;
-        line-height: 27px;
+        margin-bottom: 45px;
+        line-height: 1.94;
     }
 }
 .about_button{
