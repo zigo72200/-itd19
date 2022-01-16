@@ -4,7 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './base/reser';
+@import './base/reset';
 @import './utils/vars';
 @import './utils/hidden';
 
@@ -13,7 +13,7 @@
 @import './components/container';
 @import './components/mixin';
 @import './components/common';
-@import "./components/button";
+@import './components/button';
 //layout
 @import './layuot/header';
 @import './layuot/hero';
