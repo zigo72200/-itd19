@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  color: var(--main-text-color);
-  font-family: DM Sans, sans-serif;
-}
 // Стили общие для заголовков Продуктов и О нас -----------------------------------------------------------------------------
 .title-container {
   margin-bottom: 30px;
@@ -32,7 +27,7 @@ body {
     font-size: 26px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     letter-spacing: 0.04em;
   }
@@ -53,7 +48,7 @@ body {
     font-size: 48px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
   }
 }

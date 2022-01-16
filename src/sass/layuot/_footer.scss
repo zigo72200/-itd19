@@ -1,5 +1,6 @@
 .footer {
   padding-top: 30px;
+  padding-bottom: 43px;
   background-color: $second-background;
 }
 
@@ -11,6 +12,11 @@
   margin-bottom: 17px;
   @media screen and (min-width: $second-change) {
     @include fonts(26px, 1.15, $second-accent);
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $second-change) {
+    @include fonts(30px, 1.13, $third-change);
+    margin-bottom: 15px;
   }
 }
 
@@ -21,6 +27,10 @@
   color: $main-accent;
   @media screen and (min-width: $second-change) {
     @include fonts(48px, 1.15, $main-accent);
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: $second-change) {
+    @include fonts(58px, 1.14, $main-accent);
   }
 }
 
@@ -32,6 +42,19 @@
 
 .social-networks__item:not(:first-child) {
   margin-left: 29px;
+}
+
+.social-networks__icon {
+  fill: $footer-icon;
+  @include transition(fill);
+  @media screen and (min-width: $second-change) {
+    width: 34px;
+    height: 34px;
+  }
+}
+.social-networks__icon:hover,
+.social-networks__icon:focus {
+  fill: $main-accent;
 }
 
 .footer__contacts {
@@ -54,14 +77,16 @@
     justify-content: space-between;
   }
 }
+
 @media screen and (max-width: $second-change) {
   .footer__flex-box--text {
     margin-bottom: 43px;
   }
-
-  // .footer__flex-box--link {
-  //   margin-bottom: 65px;
-  // }
+}
+@media screen and (min-width: $second-change) and (max-width: $third-change) {
+  .footer__flex-box--text {
+    padding-top: 7px;
+  }
 }
 
 .headline {
@@ -71,7 +96,18 @@
   @include fonts(14px, 1.52, $third-text);
   font-weight: bold;
   text-align: center;
-  background-color: $second-background;
 
-  border-top: 1px solid #e1e1e1;
+  background-color: $second-background;
+  border-top: 1px solid $footer-line;
+}
+.footer__br {
+  @media screen and (min-width: $third-change) {
+    display: none;
+  }
+}
+
+.headline__br {
+  @media screen and (min-width: $second-change) {
+    display: none;
+  }
 }
