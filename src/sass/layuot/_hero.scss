@@ -99,21 +99,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 62px;
-  margin-right: 8px;
-  background-color: $main-accent;
+  //min-width: 62px;
+  margin-right: 9px;
+  //background-color: $main-accent;
   border-radius: 20px;
 
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 10px;
-  color: #ffffff;
+  //font-family: DM Sans;
+  //font-style: normal;
+  //font-weight: normal;
+  //font-size: 8px;
+  //line-height: 10px;
+  //color: #ffffff;
 }
 
-.hero-btn-link {
+/*.hero-btn-link {
   padding: 10px;
+}*/
+.btn__hero{
+  padding: 7px 20px;
+  font-weight: normal;
+  @include fonts(8px, 1.38, $main-accent);
+  @media screen and (min-width: 1280px) {
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.btn__hero--accent{
+  color: $main-text;
+  background-color: $main-accent;
+  &:hover{
+    background-color: #C7133E;
+  }
 }
 .milk-container {
   display: flex;
@@ -144,7 +161,6 @@
     }
   }
 }
-
 // .components-container {
 //   position: relative;
 //   top: 0%;
