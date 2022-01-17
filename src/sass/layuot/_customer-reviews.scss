@@ -83,7 +83,7 @@
 }
 
 .customer-reviews_text::before {
-  // content: url('/images/customer-reviews/quotation_marks.svg');
+  content: url('/src/images/customer-reviews/symbol-defs.svg');
   position: absolute;
   top: 28px;
   left: 61px;
