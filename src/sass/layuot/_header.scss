@@ -1,10 +1,19 @@
+.header-wrap {
+    // position: relative;
+    background-color: $header-background;
+    @media screen and (min-width: 1280px) {
+        padding-left: 46px;;
+    }
+    
+}
+
 .page-header {
     position: absolute;
     position: relative;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: $header-background;
+    // background-color: $header-background;
 }
 
 .page-header__container {
@@ -36,7 +45,7 @@
 
     @media screen and (min-width: 1280px) {
         top: 37px;
-        left: -40px;
+        left: -46px;
     }
 }
 
@@ -150,7 +159,7 @@ margin: auto;
     box-shadow: -8px 0px 20px 0px rgba(0, 0, 0, 0.25);
 
     background-color: $modal-background;
-    transform: translatex(100%);
+    transform: translatex(110%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
