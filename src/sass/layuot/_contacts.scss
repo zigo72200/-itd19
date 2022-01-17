@@ -49,7 +49,11 @@
 }
 .contacts__set-wrap {
   font-weight: 500;
-  @include fonts(16px, 1.86, $main-text);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  @include fonts(12px, 1.86, $main-text);
   @media screen and (min-width: 768px) {
     @include fonts(16px, 1.86, $main-text);
   }
@@ -59,6 +63,10 @@
   border-radius: 4px;
   width: 80px;
   height: 16px;
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    height: 28px;
+  }
   margin-bottom: 25px;
   display: flex;
   text-align: center;
@@ -70,6 +78,10 @@
   border-radius: 4px;
   width: 130px;
   height: 16px;
+  @media screen and (min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
   margin-bottom: 25px;
   display: flex;
   text-align: center;
