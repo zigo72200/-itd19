@@ -1,5 +1,5 @@
 .contacts {
-  background-color: $second-background;
+  background: linear-gradient(to bottom, $first-background 15%, $second-background 85%);
 }
 .contacts__container {
   padding-top: 86px;
