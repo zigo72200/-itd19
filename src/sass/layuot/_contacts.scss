@@ -1,5 +1,19 @@
 .contacts {
-  background: linear-gradient(to bottom, $first-background 15%, $second-background 85%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: linear-gradient($first-background 9%, $second-background 9%);
+  @media screen and (min-width: $second-change) {
+    background-image: linear-gradient($first-background 22%, $second-background 22%);
+  }
+  @media screen and (min-width: $third-change) {
+    background-image: url(../images/contacts/bk-contacts.png),
+      linear-gradient($first-background 22%, $second-background 22%);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/bk-contacts@2x.png),
+        linear-gradient($first-background 22%, $second-background 22%);
+    }
+  }
 }
 .contacts__container {
   padding-top: 86px;
