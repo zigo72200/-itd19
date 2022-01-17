@@ -1,19 +1,19 @@
 .header-wrap {
     // position: relative;
-    background-color: $header-background;
+    // background-color: $header-background;
     @media screen and (min-width: 1280px) {
-        padding-left: 46px;;
+        // padding-left: 46px;
     }
     
 }
 
 .page-header {
+    width: 100%;
     position: absolute;
-    position: relative;
+    // position: relative;
     top: 0;
-    left: 0;
-    z-index: 100;
-    // background-color: $header-background;
+    // z-index: 100;
+    background-color: $header-background;
 }
 
 .page-header__container {
@@ -30,6 +30,7 @@
 
 .logo-wrap {
     position: absolute;
+    z-index: 5;
     display: flex;
     align-items: center;
 
@@ -109,9 +110,14 @@
 
 // Хедер навигация
 
+.header-navigation-wrap {
+    position: absolute;
+    z-index: 5;
+}
+
 .header-navigation__list {
 display: flex;
-margin: auto;
+
     @media  screen and (max-width: 1279px) {
         display: none;
         
