@@ -202,7 +202,6 @@
 .open__contacts-btn {
   @include fonts(16px, 1.31, $main-accent);
   font-weight: 700;
-  background-color: $first-background;
   display: flex;
   align-items: center;
   text-align: center;
@@ -219,14 +218,29 @@
   @media screen and (min-width: 1280px) {
     width: 198px;
   }
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.open__contacts-btn--first {
+  color: $main-text;
+  background-color: $button-background;
+  @include transition($property: all);
   &:hover,
   &:focus {
-    background-color: $button-background;
     color: $main-text;
+    background-color: $button-background;
   }
 }
+
+.open__contacts-btn--second {
+  color: $main-accent;
+  background-color: $first-background;
+  @include transition($property: all);
+  &:hover,
+  &:focus {
+    color: $main-accent;
+    background-color: $button-background-sexond;
+  }
+}
+
 .contacts__btn {
   &:not(:last-child) {
     margin-bottom: 10px;
