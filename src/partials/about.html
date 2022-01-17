@@ -1,0 +1,37 @@
+<!--About (how it’s made?)-->
+<section id="how-its-made" class="about section">
+    <div class="container">
+        <p class="about__label label">tradition and love</p>
+        <h2 class="about__title title">how it’s made?</h2>
+        <div class="about__wrap">
+            <div class="about__wrap-img">
+                <picture>
+                    <source srcset="./images/about/about-desk-1x.png 1x, 
+                    ./images/about/about-desk-2x.png 2x"
+                    media="(min-width:1280px)">
+                    <source srcset="./images/about/about-tab-1x.png 1x, 
+                    ./images/about/about-tab-2x.png 2x" media="(min-width:768px)">
+                    <source srcset="./images/about/about-mob-1x.png 1x, 
+                    ./images/about/about-mob-2x.png 2x" media="(min-width:320px)">
+                    <img class="about__img" src="./images/about/about-desk-2x.png" alt="cow and jug of milk" width="280" />
+                </picture> 
+            </div>   
+            <div class="about__wrap-text">
+                <p class="about__preface">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                    <br>
+                    <br>
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <input type="checkbox" id="read-more" hidden />
+                <p class="about__text extra-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                     Cras massa nibh, tincidunt. Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                </p>            
+                <label for="read-more" class="btn about__btn read-more">Read <span class="more">more</span><span class="less">less</span>
+                    <svg width="5" height="8" class="about__btn-icon">
+                        <use href="./images/about/icons.svg#icon-Vector-btn"></use>
+                    </svg>
+                </label>
+            </div>
+        </div>
+</section>

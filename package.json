@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zigo72200.github.io/-itd19.git",
+  "homepage": "https://zigo72200.github.io/-itd19",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /-itd19.git/"
+    "build": "parcel build src/*.html --public-url /-itd19/"
   },
   "repository": {
     "type": "git",
