@@ -29,6 +29,8 @@
   flex-direction: row;
   margin-right: auto;
   margin-left: auto;
+  height: 100%;
+  max-width: 100%;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -51,6 +53,8 @@
   flex-direction: column;
   justify-content: center;
   z-index: 15;
+  top: auto;
+  bottom: 125px;
 
   @media screen and (min-width: 768px) {
     bottom: 21px;
@@ -147,14 +151,28 @@
 }
 
 .central-container {
-  position: relative;
-  bottom: 0;
-  left: 40%;
+  position: absolute;
+  width: 346px;
+  height: 419px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-35%);
+
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+    left: 50%;
+    width: 143px;
+    height: 368px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 613px;
+  }
 }
 .hero-circle {
   position: absolute;
-  bottom: 39px;
-  left: 40%;
+  top: 0;
+  left: 0;
 
   width: 345px;
   height: 345px;
