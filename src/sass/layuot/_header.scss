@@ -1,14 +1,13 @@
-
 .page-header {
+    width: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
-    padding-left: 34px;
-    z-index: 15;
-    margin: 0 auto;
+    z-index: 20;
+    // background-color: $header-background;
 }
 
 .page-header__container {
+    position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -20,7 +19,10 @@
 }
 
 .logo-wrap {
-    padding-left: 38px;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 767px) {
         top: 6px;
@@ -35,7 +37,7 @@
 
     @media screen and (min-width: 1280px) {
         top: 37px;
-        left: -46px;
+        left: 46px;
     }
 }
 
@@ -74,6 +76,13 @@
     display: block;
     margin-left: auto;
     
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 52px;
+        right: 224px;
+        z-index: 20;
+    }
+    
     @media screen and (min-width: 1280px) {
         display: none;
     }
@@ -82,15 +91,17 @@
 // Кнопка Buy now  
 
 .header-btn {
-    margin-left: 30px;
+    margin-left: auto;
     @media  screen and (max-width: 767px) {
         display: none;
         
     }
 
-    @media  screen and (min-width: 1280px) {
-        margin-left: auto;
-        
+    @media  screen and (min-width: 768px) and (max-width: 1279px) {
+        position: absolute;
+        top: 38px;
+        right: 34px;
+        z-index: 5;
     }
 }
 
@@ -100,8 +111,14 @@
 
 // Хедер навигация
 
+.header-navigation-wrap {
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+}
+
 .header-navigation__list {
-display: flex;
+    display: flex;
     @media  screen and (max-width: 1279px) {
         display: none;
         
@@ -138,9 +155,9 @@ display: flex;
 .mob-menu {
     width: 250px;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        width: 43%;
+        width: 46%;
     }
-    z-index: 999;
+    z-index: 9999;
     height: 100vh;
     position: fixed;
     top: 0;
