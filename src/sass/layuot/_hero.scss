@@ -2,30 +2,24 @@
   background-color: $header-background;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
   margin: 0 auto;
-  padding-top: 83px;
-  padding-left: 20px;
-
+  padding-left: 10px;
+  height: 502px;
   @media screen and (min-width: 768px) {
     width: 100%;
     height: 100%;
-    padding-top: 38px;
     padding-left: 34px;
     padding-right: 34px;
+    padding-top: 10px;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 109px;
     padding-right: 109px;
+    
   }
 }
 .hero-container {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
   margin-right: auto;
   margin-left: auto;
 
@@ -49,10 +43,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 15;
-
+  z-index: 10;
+  top: 193px;
   @media screen and (min-width: 768px) {
-    bottom: 21px;
+    bottom: 80px;
     left: 34px;
   }
 
@@ -62,7 +56,7 @@
   }
 }
 .hero-title {
-  max-width: 218px;
+  width: 218px;
   margin-bottom: 19px;
   font-family: Titan One;
   font-style: normal;
@@ -72,11 +66,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-
-  @media screen and (min-width: 480px) {
-  }
-
   @media screen and (min-width: 768px) {
+    font-size: 22px;
+    width: 162px;
+  }
+  @media screen and (min-width: 1268px) {
+    font-size: 38px;
+    width: 277px;
   }
 }
 
@@ -85,6 +81,13 @@
   font-size: 48px;
   line-height: 96.5%;
   color: $main-accent;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 
 .hero-btn-list {
@@ -115,7 +118,7 @@
 /*.hero-btn-link {
   padding: 10px;
 }*/
-.btn__hero{
+.btn__hero {
   padding: 7px 20px;
   font-weight: normal;
   @include fonts(8px, 1.38, $main-accent);
@@ -125,16 +128,21 @@
     line-height: 1.29;
   }
 }
-.btn__hero--accent{
+.btn__hero--accent {
   color: $main-text;
   background-color: $main-accent;
-  &:hover{
-    background-color: #C7133E;
+  &:hover {
+    background-color: #c7133e;
   }
 }
 .milk-container {
   display: flex;
   align-items: center;
+  position: relative;
+  right: 77px;
+  @media screen and (min-width: 768px) {
+    right: 0;
+  }
 }
 .milk-img {
   background-repeat: no-repeat;
@@ -182,25 +190,33 @@
 
 .hero-circle {
   position: absolute;
-
-  width: 345px;
-  height: 345px;
+  top: 83px;
+  right: -30px;
+  width: 346px;
+  height: 344px;
   border-radius: 50%;
   background-color: $second-accent;
 
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 324px;
+    left: 307px;
+    bottom: 46px;
+    top: auto;
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
+    left: 475px;
+    bottom: 75px;
+    
   }
 }
 
 .ice-cream-container {
   position: absolute;
-  top: 110px;
+  top: 92px;
+  bottom: 0;
   left: 50%;
   width: 171px;
   height: 410px;
@@ -212,7 +228,8 @@
     width: 143px;
     height: 336px;
     left: 50%;
-    top: 65px;
+    bottom: 0;
+    top: auto;
     background-image: url('../images/hero/ice-cream-tab-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/ice-cream-tab-2.png');
@@ -221,6 +238,7 @@
   @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
+    bottom: 0;
     background-image: url('../images/hero/ice-cream-desk-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/ice-cream-desk-2.png');
@@ -236,7 +254,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 15;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     right: 34px;
@@ -246,8 +264,8 @@
 
 .girl-img-container {
   position: absolute;
-  right: 31px;
   bottom: 0;
+  left: -60px;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -257,6 +275,7 @@
   @media screen and (min-width: 768px) {
     width: 168px;
     height: 133px;
+    left: -10px;
     background-image: url('../images/hero/girl-tab-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/girl-tab-2.png');
@@ -277,7 +296,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: right;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 72px;
@@ -285,6 +305,7 @@
 }
 
 .hero-distribution-item {
+  position: relative;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -300,16 +321,48 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1268px) {
+    font-size: 46px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    // right: -15px;
+    // top: -5px;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      width: 16px;
+      height: 16px;
+      right: -5px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+      right: -15px;
+      top: -5px;
+    }
+  }
 
   & span {
+    display: block;
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 14px;
     line-height: 10px;
     text-align: right;
     text-transform: none;
     color: #ffffff;
+    padding-right: 5px;
   }
 }
 .girl-img-container {
@@ -319,7 +372,7 @@
 }
 .hero-text {
   display: inline-block;
-  width: 114px;
+  width: 200px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -328,6 +381,9 @@
 
   color: #ffffff;
 
+  @media screen and (min-width: 768px) {
+    width: 115px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
