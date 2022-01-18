@@ -1,10 +1,10 @@
 .footer {
   padding-top: 30px;
-  padding-bottom: 43px;
   background-color: $second-background;
 }
 
 .footer__first-text {
+  display: block;
   font-family: 'Titan One';
   @include fonts(18px, 1.17, $second-accent);
   text-transform: uppercase;
@@ -72,9 +72,14 @@
 }
 
 .footer__flex-box {
+  margin-bottom: 43px;
   @media screen and (min-width: $second-change) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 91px;
+  }
+  @media screen and (min-width: $third-change) {
+    margin-bottom: 98px;
   }
 }
 
