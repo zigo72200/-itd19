@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     z-index: 20;
-    background-color: $header-background;
+    // background-color: $header-background;
 }
 
 .page-header__container {
@@ -36,7 +36,7 @@
 
     @media screen and (min-width: 1280px) {
         top: 37px;
-        left: 0;
+        left: 46px;
     }
 }
 
@@ -110,11 +110,11 @@
 
 // Хедер навигация
 
-// .header-navigation-wrap {
-//     position: absolute;
-//     top: 50px;
-//     z-index: 5;
-// }
+.header-navigation-wrap {
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+}
 
 .header-navigation__list {
     display: flex;
