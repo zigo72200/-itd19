@@ -16,22 +16,28 @@
   }
   .modal {
     position: relative;
-    width: 100vw;
+    width: 90vw;
     //min-height: 581px;
-    padding: 40px 50px 40px 40px;
+    padding: 20px 30px 20px 20px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: scale(1) translate(0);
     @include transition(transform);
+    @media screen and (min-width: 768px) {
+        padding: 30px 40px 30px 30px;
+      }
+    @media screen and(min-width: 1280px) {
+        padding: 35px 45px 35px 35px;
+      }
 }
   .is-hidden .modal {
     transform: scale(0.5) translate(10000px);
   }  
   .modal__button {
     position: absolute;
-    top: 8px;
-    right: 15px;
+    top: 3px;
+    right: 3px;
     width: 25px;
     height: 25px;
     display: flex;
@@ -42,6 +48,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     @include transition(transform);
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+        top: 8px;
+        right: 8px;
+      }
+    @media screen and (min-width: 1280px) {
+        right: 13px;
+      }
     &:hover,
     &:focus {
       transform: scale(1.05);
