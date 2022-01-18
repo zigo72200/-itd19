@@ -346,6 +346,7 @@
     display: none;
   }
   @media screen and (min-width: 1280px) {
+    width: 200px;
     font-size: 14px;
     line-height: 1.4;
     width: 200px;
@@ -353,4 +354,34 @@
 }
 .hero-distribution-item + .hero-distribution-item {
   margin-top: 13px;
+}
+//стрелочка
+.milk-container__arrow-wrap{
+  display: none;
+  border: none; 
+  border-radius: 50%;
+  background-color: #ffffff;  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+    transform: scale(1.2);
+}
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-top: 7px; 
+    padding: 7px;   
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
+.milk-container__arrow{
+  display: block;
+  fill: $main-accent;
+    width: 5px;
+    height: 5px;
+  @media screen and (min-width: 1280px) {    
+    width: 8px;
+    height: 8px;
+  }
 }
