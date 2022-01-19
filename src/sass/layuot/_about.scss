@@ -37,7 +37,7 @@
                $second-background);
        
         }
-        background-position: left 0 top 340px, left top; 
+        background-position: left 0 top 350px, left top; 
     }    
     @media screen and (min-width: 768px) {
         padding-top: 130px;
@@ -74,7 +74,8 @@
     }
     @media screen and (min-width: 1280px) {
         margin-right: 74px;
-        flex-basis: calc((100% - 37px) / 2);
+        //flex-basis: calc((100% - 37px) / 2);
+        flex-basis: calc(53% - 37px);
     }
 }
 .about__wrap-text{
@@ -88,7 +89,8 @@
         flex-basis: calc((100% - 9px) / 2);
     }
     @media screen and (min-width: 1280px) {
-        flex-basis: calc((100% - 37px) / 2);
+       // flex-basis: calc((100% - 37px) / 2);
+       flex-basis: calc(47% - 37px);
     }
     
 }
