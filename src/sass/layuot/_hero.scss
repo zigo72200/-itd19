@@ -205,11 +205,14 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
-  height: 100%;
 
-  @media screen and (min-width: 768px) {
-    right: 34px;
-    bottom: -7px;
+  min-width: 168px;
+  height: 100%;
+  right: 34px;
+  bottom: -7px;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 293px;
   }
 }
 
