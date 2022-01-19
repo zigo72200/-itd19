@@ -1,3 +1,7 @@
+.products__wrapp {
+    padding-left: 110px;
+    padding-right: 110px;
+}
 
 .products__title { 
     @media screen and (max-width:767px) {
@@ -137,7 +141,7 @@
                 content:'';
                 position: absolute;
                 top: -210px;
-                left: 33px;
+                left: 0px;
 
                 width: 335px;
                 height: 335px;
@@ -206,7 +210,7 @@
                 content:'';
                 position: absolute;
                 top: -210px;
-                left: 33px;
+                left: 0px;
 
                 width: 335px;
                 height: 335px;
@@ -275,7 +279,7 @@
                 content:'';
                 position: absolute;
                 top: -210px;
-                left: 33px;
+                left: 0px;
 
                 width: 335px;
                 height: 335px;
