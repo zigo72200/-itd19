@@ -62,6 +62,15 @@
   }
 }
 .contacts__set-wrap {
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    height: 28px;
+  }
+  margin-bottom: 25px;
   font-weight: 500;
   display: flex;
   text-align: center;
@@ -72,31 +81,19 @@
     @include fonts(16px, 1.86, $main-text);
   }
 }
-.contacts__set-box {
-  background-color: #f0d1a5;
-  border-radius: 4px;
-  width: 80px;
-  height: 16px;
-  @media screen and (min-width: 768px) {
-    width: 73px;
-    height: 28px;
-  }
-  margin-bottom: 25px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
 .contacts__set-second {
   background-color: #c2e297;
   border-radius: 4px;
+  font-weight: 500;
   width: 130px;
   height: 16px;
+  @include fonts(12px, 1.86, $main-text);
   @media screen and (min-width: 768px) {
+    @include fonts(16px, 1.86, $main-text);
     width: 138px;
     height: 28px;
   }
-  margin-bottom: 25px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -157,6 +154,17 @@
   @media screen and (min-width: 1280px) {
     @include fonts(14px, 1.86, $second-accent);
     &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.contacts__set-top {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
       margin-bottom: 15px;
     }
   }
