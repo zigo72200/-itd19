@@ -1,24 +1,14 @@
-.header-wrap {
-    // position: relative;
-    background-color: $header-background;
-    @media screen and (min-width: 1280px) {
-        padding-left: 46px;;
-    }
-    
-}
-
 .page-header {
+    width: 100%;
     position: absolute;
-    position: relative;
     top: 0;
-    left: 0;
-    z-index: 100;
+    z-index: 20;
     // background-color: $header-background;
 }
 
 .page-header__container {
     position: relative;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
     display: flex;
     padding: 20px 20px 0 20px;
@@ -30,6 +20,7 @@
 
 .logo-wrap {
     position: absolute;
+    z-index: 5;
     display: flex;
     align-items: center;
 
@@ -41,11 +32,12 @@
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         top: 37px;
         left: 34px;
+        padding-left: 0;
     }
 
     @media screen and (min-width: 1280px) {
         top: 37px;
-        left: -46px;
+        left: 46px;
     }
 }
 
@@ -54,7 +46,8 @@
     align-items: center;
 }
 
-.page-header__icon-logo {    
+.page-header__icon-logo {
+    display: block;    
     fill: $main-accent;
 }
 
@@ -83,6 +76,13 @@
     display: block;
     margin-left: auto;
     
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 52px;
+        right: 224px;
+        z-index: 20;
+    }
+    
     @media screen and (min-width: 1280px) {
         display: none;
     }
@@ -91,15 +91,17 @@
 // Кнопка Buy now  
 
 .header-btn {
-    margin-left: 30px;
+    margin-left: auto;
     @media  screen and (max-width: 767px) {
         display: none;
         
     }
 
-    @media  screen and (min-width: 1280px) {
-        margin-left: auto;
-        
+    @media  screen and (min-width: 768px) and (max-width: 1279px) {
+        position: absolute;
+        top: 38px;
+        right: 34px;
+        z-index: 5;
     }
 }
 
@@ -109,16 +111,21 @@
 
 // Хедер навигация
 
+.header-navigation-wrap {
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+}
+
 .header-navigation__list {
-display: flex;
-margin: auto;
+    display: flex;
     @media  screen and (max-width: 1279px) {
         display: none;
         
     }
 
     @media  screen and (min-width: 1280px) {
-        margin-left: 355px;
+        margin-left: 110px;
     }
 }
 
@@ -148,9 +155,9 @@ margin: auto;
 .mob-menu {
     width: 250px;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        width: 43%;
+        width: 46%;
     }
-    z-index: 999;
+    z-index: 9999;
     height: 100vh;
     position: fixed;
     top: 0;

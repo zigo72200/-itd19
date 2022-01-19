@@ -35,22 +35,21 @@
 .adventages-item {
   &:not(:last-child) {
     margin-bottom: 60px;
-    }
+  }
   width: 230px;
   @media screen and(min-width: 768px) {
     width: 180px;
     &:not(:last-child) {
-    margin-right: 60px;
+      margin-right: 60px;
     }
   }
   @media screen and(min-width: 1280px) {
     width: 330px;
-    &:not(:last-child) {
-    margin-right: 60px;
-    }
   }
   &:nth-child(1)::before {
     content: url(/images/advantage/advantage-icon1.png);
+    width: 33px;
+    height: 50px;
   }
   &:nth-child(2)::before {
     content: url(/images/advantage/advantage-icon2.png);
@@ -63,5 +62,13 @@
 .adventages-list {
   @media screen and(min-width: 768px) {
     display: flex;
+    justify-content: space-between;
+    padding-right: 76px;
+  }
+  @media screen and(min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }

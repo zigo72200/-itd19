@@ -8,6 +8,7 @@
 @import './base/body';
 @import './utils/vars';
 @import './utils/hidden';
+@import './utils/is-hidden';
 
 //components
 @import './components/section';
@@ -25,3 +26,5 @@
 @import './layuot/customer-reviews';
 @import './layuot/contacts';
 @import './layuot/footer';
+@import './layuot/modal-location';
+@import './layuot/button-up';
