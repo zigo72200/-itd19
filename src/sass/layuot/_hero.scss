@@ -2,17 +2,15 @@
   background-color: $header-background;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
   margin: 0 auto;
-  padding-top: 83px;
-  padding-left: 20px;
-
+  padding-left: 10px;
+  height: 502px;
   @media screen and (min-width: 768px) {
     width: 100%;
     height: 100%;
-    padding-top: 38px;
     padding-left: 34px;
     padding-right: 34px;
+    padding-top: 10px;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 109px;
@@ -21,16 +19,8 @@
 }
 .hero-container {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
   margin-right: auto;
   margin-left: auto;
-  height: 100%;
-  max-width: 100%;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -52,12 +42,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 15;
-  top: auto;
-  bottom: 125px;
-
+  z-index: 10;
+  top: 193px;
   @media screen and (min-width: 768px) {
-    bottom: 21px;
+    bottom: 80px;
     left: 34px;
   }
 
@@ -67,7 +55,7 @@
   }
 }
 .hero-title {
-  max-width: 218px;
+  width: 218px;
   margin-bottom: 19px;
   font-family: Titan One;
   font-style: normal;
@@ -77,11 +65,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-
-  @media screen and (min-width: 480px) {
-  }
-
   @media screen and (min-width: 768px) {
+    font-size: 22px;
+    width: 162px;
+  }
+  @media screen and (min-width: 1268px) {
+    font-size: 38px;
+    width: 277px;
   }
 }
 
@@ -90,6 +80,13 @@
   font-size: 48px;
   line-height: 96.5%;
   color: $main-accent;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 
 .hero-btn-list {
@@ -140,6 +137,11 @@
 .milk-container {
   display: flex;
   align-items: center;
+  position: relative;
+  right: 77px;
+  @media screen and (min-width: 768px) {
+    right: 0;
+  }
 }
 .milk-img {
   background-repeat: no-repeat;
@@ -166,50 +168,54 @@
     }
   }
 }
+// .components-container {
+//   position: relative;
+//   top: 0%;
+//   left: 0;
+//   // bottom: 0;
+//   // left: 50%;
 
-.central-container {
-  position: absolute;
-  width: 346px;
-  height: 419px;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-35%);
+//   // width: 345px;
+//   // min-height: 502px;
+//   // @media screen and (min-width: 780px) {
+//   //   width: 368px;
+//   //   min-height: 324px;
+//   // }
+//   // @media screen and (min-width: 1280px) {
+//   //   width: 538px;
+//   //   min-height: 613px;
+//   // }
+// }
 
-  @media screen and (min-width: 768px) {
-    bottom: 0;
-    left: 50%;
-    width: 143px;
-    height: 368px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 538px;
-    height: 613px;
-  }
-}
 .hero-circle {
   position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 345px;
-  height: 345px;
+  top: 83px;
+  right: -30px;
+  width: 346px;
+  height: 344px;
   border-radius: 50%;
   background-color: $second-accent;
 
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 324px;
+    left: 307px;
+    bottom: 46px;
+    top: auto;
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
+    left: 475px;
+    bottom: 75px;
   }
 }
 
 .ice-cream-container {
   position: absolute;
+  top: 92px;
   bottom: 0;
-  transform: translateX(50%);
+  left: 50%;
   width: 171px;
   height: 410px;
   background-image: url('../images/hero/ice-cream-mob-1.png');
@@ -219,7 +225,9 @@
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
-
+    left: 50%;
+    bottom: 0;
+    top: auto;
     background-image: url('../images/hero/ice-cream-tab-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/ice-cream-tab-2.png');
@@ -228,7 +236,7 @@
   @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
-
+    bottom: 0;
     background-image: url('../images/hero/ice-cream-desk-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/ice-cream-desk-2.png');
@@ -243,8 +251,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  z-index: 15;
+  align-items: center;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     right: 34px;
@@ -253,9 +261,9 @@
 }
 
 .girl-img-container {
-  position: relative;
-  right: 0;
+  position: absolute;
   bottom: 0;
+  left: -60px;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -265,6 +273,7 @@
   @media screen and (min-width: 768px) {
     width: 168px;
     height: 133px;
+    left: -10px;
     background-image: url('../images/hero/girl-tab-1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/girl-tab-2.png');
@@ -285,6 +294,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: right;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 72px;
@@ -292,10 +303,7 @@
 }
 
 .hero-distribution-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-
+  position: relative;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -311,29 +319,57 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1268px) {
+    font-size: 46px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      width: 16px;
+      height: 16px;
+      right: -5px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+      right: -15px;
+      top: -5px;
+    }
+  }
 
   & span {
+    display: block;
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 14px;
     line-height: 10px;
     text-align: right;
     text-transform: none;
     color: #ffffff;
-    &::after {
-      content: ' ';
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
+    padding-right: 5px;
   }
 }
-
+.girl-img-container {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
 .hero-text {
   display: inline-block;
-  width: 114px;
+  width: 200px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -342,6 +378,9 @@
 
   color: #ffffff;
 
+  @media screen and (min-width: 768px) {
+    width: 115px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -349,38 +388,38 @@
     width: 200px;
     font-size: 14px;
     line-height: 1.4;
-    width: 200px;
   }
 }
 .hero-distribution-item + .hero-distribution-item {
   margin-top: 13px;
 }
 //стрелочка
-.milk-container__arrow-wrap{
+.milk-container__arrow-wrap {
   display: none;
-  border: none; 
+  border: none;
   border-radius: 50%;
-  background-color: #ffffff;  
+  background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     transform: scale(1.2);
-}
+  }
   @media screen and (min-width: 768px) {
     display: inline-block;
-    margin-top: 7px; 
-    padding: 7px;   
+    margin-top: 7px;
+    padding: 7px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
     padding: 10px;
   }
 }
-.milk-container__arrow{
+.milk-container__arrow {
   display: block;
   fill: $main-accent;
-    width: 5px;
-    height: 5px;
-  @media screen and (min-width: 1280px) {    
+  width: 5px;
+  height: 5px;
+  @media screen and (min-width: 1280px) {
     width: 8px;
     height: 8px;
   }
