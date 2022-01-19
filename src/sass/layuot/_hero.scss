@@ -101,22 +101,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //min-width: 62px;
   margin-right: 9px;
-  //background-color: $main-accent;
   border-radius: 20px;
-
-  //font-family: DM Sans;
-  //font-style: normal;
-  //font-weight: normal;
-  //font-size: 8px;
-  //line-height: 10px;
-  //color: #ffffff;
 }
 
-/*.hero-btn-link {
-  padding: 10px;
-}*/
 .btn__hero {
   padding: 7px 20px;
   font-weight: normal;
@@ -154,38 +142,12 @@
   @media screen and (min-width: 768px) {
     width: 124px;
     height: 126px;
-    background-image: url('../images/hero/milk-tab-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/milk-tab-2.png');
-    }
   }
   @media screen and (min-width: 1280px) {
     width: 188px;
     height: 191px;
-    background-image: url('../images/hero/milk-desk-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/milk-desk-2.png');
-    }
   }
 }
-// .components-container {
-//   position: relative;
-//   top: 0%;
-//   left: 0;
-//   // bottom: 0;
-//   // left: 50%;
-
-//   // width: 345px;
-//   // min-height: 502px;
-//   // @media screen and (min-width: 780px) {
-//   //   width: 368px;
-//   //   min-height: 324px;
-//   // }
-//   // @media screen and (min-width: 1280px) {
-//   //   width: 538px;
-//   //   min-height: 613px;
-//   // }
-// }
 
 .hero-circle {
   position: absolute;
@@ -211,39 +173,29 @@
   }
 }
 
-.ice-cream-container {
+.ice-cream {
   position: absolute;
   top: 92px;
   bottom: 0;
   left: 50%;
   width: 171px;
   height: 410px;
-  background-image: url('../images/hero/ice-cream-mob-1.png');
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/hero/ice-cream-mob-2.png');
-  }
+  background-repeat: no-repeat;
+  background-size: contain;
+
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     left: 50%;
     bottom: 0;
     top: auto;
-    background-image: url('../images/hero/ice-cream-tab-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/ice-cream-tab-2.png');
-    }
   }
+
   @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
     bottom: 0;
-    background-image: url('../images/hero/ice-cream-desk-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/ice-cream-desk-2.png');
-    }
   }
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .right-container {
@@ -253,6 +205,7 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  height: 100%;
 
   @media screen and (min-width: 768px) {
     right: 34px;
@@ -260,33 +213,27 @@
   }
 }
 
-.girl-img-container {
-  position: absolute;
-  bottom: 0;
-  left: -60px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
+.girl-img {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+
     width: 168px;
     height: 133px;
     left: -10px;
-    background-image: url('../images/hero/girl-tab-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/girl-tab-2.png');
-    }
+
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media screen and (min-width: 1280px) {
     width: 293px;
     height: 232px;
-    background-image: url('../images/hero/girl-desk-1.png');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/hero/girl-desk-2.png');
-    }
   }
 }
 
@@ -334,8 +281,6 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    // right: -15px;
-    // top: -5px;
     z-index: -1;
     @media screen and (min-width: 768px) {
       width: 16px;
@@ -394,7 +339,7 @@
 .hero-distribution-item + .hero-distribution-item {
   margin-top: 13px;
 }
-//стрелочка
+
 .milk-container__arrow-wrap {
   display: none;
   border: none;

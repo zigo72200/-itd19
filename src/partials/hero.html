@@ -10,7 +10,13 @@
                 <li class="hero-btn"> <a href="#how-its-made" class="btn btn__hero hero-btn-link">How it’s made?</a></li>
              </ul> 
              <div class="milk-container">
-                <div class="milk-img"></div>
+                <picture>
+                    <source srcset="./images/hero/milk-desk-1.png 1x, 
+                                                ./images/hero/milk-desk-2.png 2x" media="(min-width:1280px)">
+                    <source srcset="./images/hero/milk-tab-1.png 1x, 
+                                                ./images/hero/milk-tab-2.png 2x" media="(min-width:768px)">
+                    <img class="milk-img" src="./images/hero/milk-desk-2.png" alt="glass of milk" width="188" />
+                </picture>
                 <div class="hero-text">
                     <p class="milk-container__text-wrap">
                         Lorem ipsum dolor sit amet,
@@ -34,11 +40,26 @@
                     <span>food trucks</span>
                 </li>
             </ul>
-            <div class="girl-img-container"></div>
+            <picture>
+                <source srcset="./images/hero/girl-desk-1.png 1x, 
+                                ./images/hero/girl-desk-2.png 2x" media="(min-width:1280px)">
+                <source srcset="./images/hero/girl-tab-1.png 1x, 
+                                ./images/hero/girl-tab-2.png 2x" media="(min-width:768px)">
+            <img class="girl-img" src="./images/hero/girl-desk-2.png" alt="girl with ice-cream" width="293" />
+            </picture>
         </div>
         <div class="central-container">
             <div class="hero-circle"></div>
-            <div class="ice-cream-container"></div>
+            <picture>
+                <source srcset="./images/hero/ice-cream-desk-1.png 1x, 
+                                ./images/hero/ice-cream-desk-2.png 2x" media="(min-width:1280px)">
+                <source srcset="./images/hero/ice-cream-tab-1.png 1x, 
+                                ./images/hero/ice-cream-tab-2.png 2x" media="(min-width:768px)">
+                <source srcset="./images/hero/ice-cream-mob-1.png 1x, 
+                                ./images/hero/ice-cream-mob-1.png 2x" media="(min-width:320px)">
+                <img class="ice-cream" src="./images/hero/ice-cream-desk-2.png" alt="ice-cream" width="171" />
+            </picture>
+            
         </div>
     </div>
    
