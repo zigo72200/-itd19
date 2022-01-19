@@ -1,0 +1,69 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal {
+    position: relative;
+    width: 90vw;
+    //min-height: 581px;
+    padding: 20px 30px 20px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: scale(1) translate(0);
+    @include transition(transform);
+    @media screen and (min-width: 768px) {
+        padding: 30px 40px 30px 30px;
+      }
+    @media screen and(min-width: 1280px) {
+        padding: 35px 45px 35px 35px;
+      }
+}
+  .is-hidden .modal {
+    transform: scale(0.5) translate(10000px);
+  }  
+  .modal__button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $main-accent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include transition(transform);
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+        top: 8px;
+        right: 8px;
+      }
+    @media screen and (min-width: 1280px) {
+        right: 13px;
+      }
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+ 
+  /*.modal__title {
+  }*/
+  .modal__maps{
+      width: 100%;
+      height: 400px; 
+  }

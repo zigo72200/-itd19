@@ -7,9 +7,7 @@
     $second-background);
     background-repeat: no-repeat;
     background-size: contain;  
-    background-position: left bottom;      
     @media screen and (max-width: 767px) {
-
         background-image: url(../images/about/about-bg-mob-1x.png),
      linear-gradient(
         $second-background,
@@ -23,6 +21,7 @@
                $second-background);
        
         }
+        background-position: left 0 top 765px, left top;
     }
     @media screen and (min-width: 1280px) {
         background-image: url(../images/about/about-bg-desk-1x.png),
@@ -38,6 +37,7 @@
                $second-background);
        
         }
+        background-position: left 0 top 340px, left top; 
     }    
     @media screen and (min-width: 768px) {
         padding-top: 130px;
@@ -90,6 +90,7 @@
     @media screen and (min-width: 1280px) {
         flex-basis: calc((100% - 37px) / 2);
     }
+    
 }
 .about__preface{
     margin-bottom: 30px;
@@ -136,7 +137,7 @@
 .about__btn-icon{
   margin-left: 14px;
 }
-/*-----------------------Read more-------------------------*/
+/*----------------------- button Read more-------------------------*/
 
 .extra-text {
     display: none;
