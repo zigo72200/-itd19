@@ -4,7 +4,7 @@
   padding-bottom: 40px;
   background-image: linear-gradient($second-background, $second-background);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-bg-mob-1x.png),
       linear-gradient($second-background, $second-background);
