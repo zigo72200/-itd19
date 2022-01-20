@@ -15,13 +15,14 @@
     background-position: left 0 top 765px, left top;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/about/about-bg-desk-1x.png),
+    background-image: url(../images/about/about-bg-desk-left-1x.png), url(../images/about/about-bg-desk-right-1x.png),
       linear-gradient($second-background, $second-background);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-desk-2x.png),
+      background-image: url(../images/about/about-bg-desk-left-2x.png), url(../images/about/about-bg-desk-right-2x.png),
         linear-gradient($second-background, $second-background);
     }
-    background-position: left 0 top 350px, left top;
+    background-position: left 0 top 350px, right 0 top 350px, left top;
+    background-size: 165px, 271px, 100%;
   }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
