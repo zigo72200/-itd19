@@ -18,6 +18,11 @@
   height: 85px;
 }
 
+.customer-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .customer-reviews_content {
   position: relative;
   display: flex;
@@ -183,10 +188,9 @@
   }
 }
 
-// .customer-reviews_icon {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
+.swiper-wrapper {
+  margin-bottom: 30px;
+  @media screen and (min-width: $second-change) {
+    margin-bottom: 35px;
+  }
+}

@@ -1,37 +1,58 @@
 <article class="customer-reviews">
   <h1 class="hidden">customer-reviews</h1>
-  <div class="container customer-reviews_container">
-    <img
-      class="customer-reviews_img"
-      srcset="
-        ./images/customer-reviews/visitor1@1x.png 1x,
-        ./images/customer-reviews/visitor1@2x.png 2x
-      "
-      src="./images/customer-reviews/visitor1@2x.png"
-      alt="Фото клиента"
-    />
-    <div class="customer-reviews_content">
-      <div class="customer-reviews_strip">
-        <p class="customer-reviews_text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-        </p>
-      </div>
-    </div>
-    <div class="customer-reviews_points">
-      <span class="customer-reviews_markers"></span>
-    </div>
-    <p class="customer-reviews_subtext">Emily, Los Angeles</p>
-    <ul class="customer-reviews_subpoints">
-      <li class="customer-reviews_subpoints-items">
-        <!-- <span>
-          <svg class="customer-reviews_icon" width="16" height="12">
-            <use href="/images/customer-reviews/home.svg"></use>
-          </svg>
-        </span> -->
+  <div class="container customer-reviews_container swiper mySwiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide customer-item">
+        <img class="customer-reviews_img" srcset="
+                ./images/customer-reviews/visitor1@1x.png 1x,
+                ./images/customer-reviews/visitor1@2x.png 2x
+              " src="./images/customer-reviews/visitor1@2x.png" alt="Фото клиента" />
+        <div class="customer-reviews_content">
+          <div class="customer-reviews_strip">
+            <p class="customer-reviews_text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <div class="customer-reviews_points">
+          <span class="customer-reviews_markers"></span>
+        </div>
+        <p class="customer-reviews_subtext">Emily, Los Angeles</p>
       </li>
-      <li class="customer-reviews_subpoints-items"></li>
-      <li class="customer-reviews_subpoints-items"></li>
+      <li class="swiper-slide customer-item">
+        <img class="customer-reviews_img" srcset="
+                        ./images/customer-reviews/visitor2.png 1x,
+                        ./images/customer-reviews/visitor2@2x.png 2x
+                      " src="./images/customer-reviews/visitor2@2x.png" alt="Фото клиента" />
+        <div class="customer-reviews_content">
+          <div class="customer-reviews_strip">
+            <p class="customer-reviews_text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <div class="customer-reviews_points">
+          <span class="customer-reviews_markers"></span>
+        </div>
+        <p class="customer-reviews_subtext">Emily, Los Angeles</p>
+      </li>
     </ul>
+    <div class="swiper-pagination">    
+      <!-- <ul class="customer-reviews_subpoints swiper-pagination">
+        <li class="customer-reviews_subpoints-items">
+          <span>
+            <svg class="customer-reviews_icon" width="16" height="12">
+              <use href="/images/customer-reviews/home.svg"></use>
+            </svg>
+          </span>
+        </li>
+        <li class="customer-reviews_subpoints-items"></li>
+        <li class="customer-reviews_subpoints-items"></li>
+      </ul> -->
+    </div>
+    
+    
   </div>
 </article>
