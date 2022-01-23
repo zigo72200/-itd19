@@ -7,3 +7,7 @@
     $first-background 60%
   );
 }
+
+.gallery__img {
+  @include transition($property: all);
+}
